@@ -105,11 +105,11 @@ int main(int argc, char** argv)
   r1ifp = gzopen(r1ifn, "r");
   r2ifp = gzopen(r2ifn, "r");
   if(r1ifp == Z_NULL || r2ifp == Z_NULL)
-  { fprintf(stderr, "Error opening input files. %s\n"); strerror(errno); }
+  { fprintf(stderr, "Error opening input files. %s\n", strerror(errno)); }
   r1ofp = gzopen(r1ofn, "w3");
   r2ofp = gzopen(r2ofn, "w3");
   if(r1ofp == Z_NULL || r2ofp == Z_NULL)
-  { fprintf(stderr, "Error opening output files. %s\n"); strerror(errno); }
+  { fprintf(stderr, "Error opening output files. %s\n", strerror(errno)); }
   r1seq = kseq_init(r1ifp);
   r2seq = kseq_init(r2ifp);
 
