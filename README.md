@@ -1,5 +1,5 @@
 ## WannaAln
-WannaAln takes in a pair of FASTQ file and an arbitary length pattern, calculates the edit distance of 4 pairs including "R1 x pattern", "R2 x pattern", "R1 x ReverseComplement(pattern)" and "R2 x ReverseComplement(pattern)", and ou the reads to a pair of new FASTQ file if any of the 4 edit distances go below a threshold.
+WannaAln takes in a pair of FASTQ file and an arbitary length pattern, calculates the edit distance of 4 pairs including "R1 x pattern", "R2 x pattern", "R1 x ReverseComplement(pattern)" and "R2 x ReverseComplement(pattern)", and output the reads to a pair of new FASTQ file if any of the 4 edit distances go below a threshold.
 
 ## Parameters
 ```
